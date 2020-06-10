@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.food-header {
+  width: 100%;
+  height: 600px;
+  background-image: url("../../img/header.png");
+  background-position: center;
+  background-size: cover;
+  background-color: gray;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.overlay .valign-wrapper {
+  text-align: center;
+}
+.overlay .site-heading {
+  font-family: "Merienda";
+  color: lightcyan;
+  font-size: 4rem;
+  font-weight: bold;
+}
+.overlay .site-subheading {
+  font-size: 2rem;
+  color: lightcyan;
+  letter-spacing: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
