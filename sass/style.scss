@@ -16,10 +16,12 @@ body {
     background-position: center;
     background-size: cover;
     background-color: gray;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 
 .overlay {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -39,4 +41,39 @@ body {
         color: lightcyan;
         letter-spacing: 5px;
     }
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: auto;
+    background-color: rgba($color: #ffff, $alpha: 0.8);
+    ul {
+        list-style: none;
+        display: flex;
+        a {
+            display: block;
+            text-decoration: none;
+            color: #333;
+            padding: 1.2rem;
+            &.active {
+                color: #689f38;
+            }
+        }
+    }
+}
+
+.mb-auto {
+    margin-bottom: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #333;
 }
