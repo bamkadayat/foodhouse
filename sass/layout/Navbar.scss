@@ -12,8 +12,11 @@
             text-decoration: none;
             color: #333;
             padding: 1.2rem;
-            &.active {
+            transition: 0.4s all;
+            &.active,
+            &:hover {
                 color: $primary-color;
+                transition: 0.4s all;
             }
         }
     }

@@ -98,9 +98,11 @@ body {
   text-decoration: none;
   color: #333;
   padding: 1.2rem;
+  transition: 0.4s all;
 }
-.navbar ul a.active {
+.navbar ul a.active, .navbar ul a:hover {
   color: #689f38;
+  transition: 0.4s all;
 }
 
 .overlay {
@@ -281,6 +283,81 @@ figure .back {
 
 .margin-both {
   margin: 2rem 0;
+}
+
+@media (max-width: 760px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .food-header {
+    height: 450px;
+  }
+
+  .site-heading {
+    font-size: 3rem !important;
+  }
+
+  .site-subheading {
+    font-size: 1.5rem !important;
+  }
+
+  .my-icon {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    align-items: center;
+    padding: 10px 0;
+    margin-left: 2rem;
+  }
+
+  .icon-tab {
+    margin-top: 4rem;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .food-offer-heading {
+    font-size: 2rem;
+  }
+
+  .food-menu {
+    text-align: center;
+  }
+  .food-menu h3 {
+    font-size: 1.2rem;
+  }
+
+  .testimonials {
+    padding-top: 2rem;
+    width: 100%;
+    height: 400px;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: normal;
+  }
+
+  .food-offer {
+    height: 300px;
+  }
+
+  .text-center {
+    font-size: 1.5rem;
+  }
+
+  .testimonials-user {
+    display: inline-block;
+  }
+
+  .food-testimonial {
+    padding-bottom: 2rem;
+  }
+
+  .testimonials-text {
+    line-height: 2.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
