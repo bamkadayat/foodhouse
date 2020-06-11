@@ -112,6 +112,7 @@ figure {
 figure img {
   width: 100%;
   height: 100%;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
 }
 figure .back {
   position: absolute;
@@ -121,6 +122,64 @@ figure .back {
   height: 100%;
   background-color: #689f38;
   z-index: -1;
+}
+
+.food-about {
+  padding: 3rem 0;
+}
+
+.food-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background-color: #689f38;
+  color: #fff;
+  border-radius: 50%;
+}
+.food-icons i {
+  font-size: 3rem;
+  margin: auto;
+}
+
+.food-offer {
+  width: 100%;
+  height: 500px;
+  background-image: url("../../img/offer.png");
+  color: #fff;
+}
+.food-offer-heading {
+  font-weight: 600;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+.food-offer-subheading {
+  font-weight: 300;
+  letter-spacing: 5px;
+}
+.food-offer .offer-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #689f38;
+  background-color: #fff;
+  padding: 10px 25px;
+  border-radius: 2rem;
+  margin-top: 15px;
+  transition: 0.4s all;
+}
+.food-offer .offer-btn:hover {
+  background-color: #689f38;
+  color: #fff;
+  transition: 0.4s all;
+}
+
+.menu {
+  list-style: none;
+}
+.menu-item {
+  columns: #707070;
+  line-height: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
