@@ -247,3 +247,20 @@ figure {
         margin: auto;
     }
 }
+
+.food-footer {
+    position: relative;
+}
+
+.top-scroll i {
+    position: absolute;
+    font-size: 2rem;
+    color: green;
+    right: 2%;
+    top: 80%;
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+}

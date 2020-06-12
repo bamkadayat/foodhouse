@@ -5,3 +5,7 @@ function myFunction(e) {
     let showsNav = document.getElementById('menu');
     showsNav.classList.toggle("open");
 }
+
+function scrollToTop() {
+    $(window).scrollTop(0);
+}

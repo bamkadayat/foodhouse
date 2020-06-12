@@ -124,6 +124,7 @@ body {
     right: 2%;
     margin-top: 5px;
     background: none;
+    z-index: 454545;
   }
 
   .nav-links {
@@ -401,6 +402,22 @@ figure .back {
     display: block;
     margin: auto;
   }
+}
+.food-footer {
+  position: relative;
+}
+
+.top-scroll i {
+  position: absolute;
+  font-size: 2rem;
+  color: green;
+  right: 2%;
+  top: 80%;
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /*# sourceMappingURL=style.css.map */

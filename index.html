@@ -15,15 +15,15 @@
 
 <body>
     <!-- Food header -->
-    <div class="food-header">
+    <div class="food-header" id="header">
         <div class="overlay">
             <nav class="navbar">
                 <button type="button" autofocus class="btn-mobile"><i class="fa fa-bars"></i></button>
                 <ul class="nav-links" id="menu">
                     <li><a class="active" href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#mnu">Menu</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
                 </ul>
             </nav>
             <div class="valign-wrapper mb-auto">
@@ -33,7 +33,7 @@
         </div>
     </div>
     <!-- food About -->
-    <div class="food-about">
+    <div class="food-about" id="about">
         <div class="container">
             <h2 class="text-center">About us</h2>
             <div class="row">
@@ -90,7 +90,7 @@
         </div>
     </div>
     <!-- food menu -->
-    <div class="food-menu">
+    <div class="food-menu" id="mnu">
         <div class="container">
             <h2 class="text-center">Food Menu</h2>
             <div class="row">
@@ -128,7 +128,7 @@
         </div>
     </div>
     <!-- food testimonials -->
-    <div class="food-testimonial">
+    <div class="food-testimonial" id="testimonials">
         <div class="overlay">
             <div class="valign-wrapper">
                 <h2 class="test-head">Testimonials</h2>
@@ -171,9 +171,13 @@
                         <li><i class="fab fa-cc-visa fa-2x" aria-hidden="true"></i></li>
                     </ul>
                 </div>
+                <div class="top-scroll">
+                    <a href="#header"> <i class="fa fa-arrow-circle-up"></i></a>
+                </div>
             </div>
         </div>
     </div>
+
     <!-- Fontawesome kits -->
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script src="./main.js"></script>
