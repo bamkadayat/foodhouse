@@ -21,3 +21,45 @@
         }
     }
 }
+
+.btn-mobile {
+    visibility: hidden;
+}
+
+@media(max-width:760px) {
+    .navbar {
+        .btn-mobile {
+            display: block;
+            visibility: visible;
+            font-size: 2rem;
+            padding: 8px;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            z-index: 2;
+            position: fixed;
+            right: 2%;
+            margin-top: 5px;
+            background-color: rgba($color: #222, $alpha: 0.7);
+        }
+    }
+    .nav-links {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background: rgba($color: #000000, $alpha: 0.8);
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        transition: 0.8s all;
+        li a {
+            color: #fff;
+        }
+    }
+    .open {
+        left: 0;
+        transition: 0.8s all;
+    }
+}

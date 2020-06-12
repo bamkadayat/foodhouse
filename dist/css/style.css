@@ -105,6 +105,47 @@ body {
   transition: 0.4s all;
 }
 
+.btn-mobile {
+  visibility: hidden;
+}
+
+@media (max-width: 760px) {
+  .navbar .btn-mobile {
+    display: block;
+    visibility: visible;
+    font-size: 2rem;
+    padding: 8px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    z-index: 2;
+    position: fixed;
+    right: 2%;
+    margin-top: 5px;
+    background-color: rgba(34, 34, 34, 0.7);
+  }
+
+  .nav-links {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.8);
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    transition: 0.8s all;
+  }
+  .nav-links li a {
+    color: #fff;
+  }
+
+  .open {
+    left: 0;
+    transition: 0.8s all;
+  }
+}
 .overlay {
   display: flex;
   flex-wrap: wrap;
